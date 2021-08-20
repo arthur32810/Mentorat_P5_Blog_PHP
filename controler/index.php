@@ -1,6 +1,6 @@
 <?php
 
-require '../vendor/autoload.php';
+require_once('../vendor/autoload.php');
 
 $action = filter_input(INPUT_GET, 'action');
 
@@ -15,5 +15,5 @@ if ($action) {
         echo '404';
     }
 } else {
-    require '../view/frontend/index.php';
+    require('../view/frontend/index.php');
 }
